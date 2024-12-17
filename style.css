@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: calc(100vh - 25%);
+}
+.redGreen {
+    width: 100px;
+    height: 50px;
+    background: red;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.circle {
+    width: 46px;
+    height: 46px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.3s ease;
+}
+  
+.redGreen.active {
+    background: green;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+  
+.redGreen.active .circle {
+    left: 52px;
+}
+  
